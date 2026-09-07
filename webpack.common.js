@@ -1,25 +1,26 @@
-import * as webpack from "webpack";
+const path = require("path");
 
-const config: webpack.Configuration = {
+module.exports = {
   entry: {
-    "euromaster.masternet-popup": "./src/index.tsx"
+    "euromaster.masternet-popup": "./src/index.tsx",
   },
+
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: ["babel-loader"],
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
+
   resolve: {
-    extensions: [".tsx", ".ts", ".js"]
+    extensions: [".tsx", ".ts", ".js"],
   },
+
   output: {
     filename: "[name].js",
-    path: __dirname + "/dist"
-  }
+    path: path.resolve(__dirname, "dist"),
+  },
 };
-
-export default config;
