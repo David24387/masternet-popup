@@ -18,8 +18,8 @@ export const MasternetPopup = (): ReactElement | null => {
     overlay.innerHTML = `
       <div id="masternet-activation-popup">
         <button class="masternet-popup-close" type="button" aria-label="Schließen">×</button>
-        <h2 id="masternet-popup-title">Wie aktiv ist Ihr Servicecenter?</h2>
-        <p>Sehen Sie jetzt, wie viele Mitarbeitende Ihres Servicecenters bereits im Masternet registriert sind und wie Ihr Center im Vergleich abschneidet.</p>
+        <h2 id="masternet-popup-title">Wie aktiv ist Dein Servicecenter?</h2>
+        <p>Seht jetzt, wie viele Mitarbeitende Eures Servicecenters bereits im Masternet registriert sind und wie Euer Center im Vergleich abschneidet.</p>
         <a class="masternet-popup-button" href="${TARGET_URL}">Aktivierungsstand ansehen →</a>
       </div>
     `;
